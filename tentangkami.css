@@ -1,0 +1,80 @@
+/* Gaya untuk body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #2c3e50, #bdc3c7);
+  color: #fff;
+  min-height: 100vh; /* Pastikan halaman memiliki tinggi minimal 100% viewport */
+  position: relative; /* Agar elemen absolut bekerja dengan benar */
+}
+
+/* Gaya untuk container utama */
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Gaya untuk kartu profil */
+.card img.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+  margin: 10px 0;
+  color: #005555;
+}
+
+.card p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Gaya untuk tautan sosial */
+.social-links a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #005555;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+/* Gaya untuk tombol kembali */
+.back-button {
+  text-align: center;
+  margin-top: 20px;
+  position: absolute; /* Posisi absolut */
+  bottom: 20px; /* Letakkan di bagian bawah halaman */
+  left: 50%; /* Pusatkan secara horizontal */
+  transform: translateX(-50%); /* Koreksi posisi agar benar-benar di tengah */
+}
+
+.back-button a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #005555;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.back-button a:hover {
+  background-color: #007777;
+}

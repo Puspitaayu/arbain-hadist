@@ -1,0 +1,137 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #2c3e50, #4ca1af);
+  color: #fff;
+  min-height: 100vh; /* Tinggi minimal 100% dari viewport */
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  background: #008080;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section#beranda {
+  padding: 20px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  flex-grow: 1; /* Membuat elemen ini mengisi ruang kosong */
+}
+
+/* Gaya untuk gambar */
+.gambar {
+  display: flex; /* Menggunakan Flexbox */
+  justify-content: center; /* Memusatkan secara horizontal */
+  align-items: center; /* Memusatkan secara vertikal */
+  height: 500px; /* Tinggi area gambar */
+}
+/* Gaya umum untuk desktop */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #2c3e50, #4ca1af);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  background: #008080;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a img {
+  width: 50px;
+  height: auto;
+}
+
+section#beranda {
+  padding: 20px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.gambar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.gambar img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Media query untuk layar HP (maksimal 768px) */
+/* Navigasi tetap horizontal */
+nav ul {
+  display: flex; /* Gunakan Flexbox untuk tata letak horizontal */
+  justify-content: center; /* Pusatkan item navigasi secara horizontal */
+  align-items: center; /* Pusatkan item secara vertikal */
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  background: #008080; /* Warna latar belakang navigasi */
+}
+
+nav ul li {
+  margin: 0 15px; /* Jarak antar item navigasi */
+}
+
+nav ul li a img {
+  width: 40px; /* Ukuran ikon navigasi */
+  height: auto;
+}
+
+/* Media query untuk layar HP (maksimal 768px) */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: row; /* Pastikan tetap horizontal */
+    justify-content: space-around; /* Sebarkan item secara merata */
+  }
+
+  nav ul li {
+    margin: 0 10px; /* Kurangi jarak antar item untuk layar kecil */
+  }
+
+  nav ul li a img {
+    width: 30px; /* Perkecil ukuran ikon navigasi untuk layar kecil */
+  }
+}
